@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Madras Café</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="img/icon.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+	<header class="header">
+		<div class="heading">
+			<img src="https://i.postimg.cc/tJPxmRFW/Pngtree-namaste-hand-illustration-with-flower-8795958.png" height="150px" width="150px">
+			<a href="index.html"><div class="brand">
+				<h1>Madras Café</h1>
+				<h2>&#10037;&#10037;&#10037;&nbsp;Since 1974&nbsp;&#10037;&#10037;&#10037;</h2>
+			</div></a>
+            <div class="heading-images">
+                <img src="https://i.postimg.cc/rszWBRRR/idlyvada.jpg" width="150px" height="100px">
+                <img src="https://i.postimg.cc/CM6bj79G/poori.jpg" width="150px" height="100px">
+                <img src="https://i.postimg.cc/6Q0vTfdG/parotta.jpg" width="150px" height="100px">
+                <img src="https://i.postimg.cc/MH4RqZ1P/dosa.jpg" width="150px" height="100px">
+                <img src="https://i.postimg.cc/C1hb4QFN/kaapi.jpg" width="150px" height="100px">
+				
+            </div>
+		</div>
+	</header>
+	
+
+	<nav>
+		<ul>
+			<li><a href="ourhistory.html">Our History</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="delivery.html">Delivery</a></li>
+			<li><a href="catering.html">Catering</a></li>
+			<li><a href="branches.html">Branches</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>		
+			<div class="login">
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>	
+			</div>
+		</ul>
+	</nav>
+	
+	<!------------------------------------------swipejs web-------------------------------->
+    <!-- Slider main container -->
+    <div class="swiper">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+		  <!-- Slides -->
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/xdDL4855/biriyani.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/ZRJpJQ1y/cutlet.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/rmy0Brr1/cutlet2.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/rsPrCwzS/dosa.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/DzTbcDfY/fried-rice.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/gcTX7rkh/idly-chutney.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/6qg84b1c/idly-vada.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/Hs8c1HVh/masal-dosa.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/1XtFqqRm/mini-idly.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/Kv1LcBsQ/murukku.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/ydn9xPHp/naan.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/LstjKS0p/paruppu-vadai.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/Pf3Yk2KP/pav-bhaji.jpg"></div>
+		  <div class="swiper-slide"><img src="https://i.postimg.cc/cLYnwZWn/poori-masal.jpg"></div>
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination"></div>
+	  
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	  
+		<!-- If we need scrollbar -->
+		<div class="swiper-scrollbar"></div>
+		</div>
+		<!--------------------------------------------------------------------------------------->
+
+	<footer>
+		<ul>
+			<li><a href="#"><img src="https://i.postimg.cc/02Tm4Qkr/yt.png"></a></li>
+			<li><a href="#"><img src="https://i.postimg.cc/63b4f6bW/insta.png"></a></li>
+			<li><a href="#"><img src="https://i.postimg.cc/W42FGFTJ/317750-linkedin-icon.png"></a></li>
+			<li><a href="#"><img src="https://i.postimg.cc/GmRVjrNy/1783351-chatting-messages-social-media-whatsapp-internet-icon.png"></a></li>
+		</ul>
+
+		<p>&#169;&nbsp;2023 | All Copyrights reserved</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+        const swiper = new Swiper('.swiper',{
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {delay: 1000,},
+        slidesPerView: 3,
+        spaceBetween:0,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+        autoplayDisableOnInteraction:true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+
+        //stop/start slideshow with mouse:
+            
+        });
+        
+        // $(".swiper-container").hover(function() {
+        //  (this).swiper.autoplay.start();
+        // }, function() {
+        //  (this).swiper.autoplay.start();
+        // });
+        </script>
+
+</body>
+</html>

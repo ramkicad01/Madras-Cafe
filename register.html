@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Madras Café</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/register.css"> -->
+	<link rel="icon" type="image/x-icon" href="img/icon.png">
+</head>
+<body>
+
+	<header class="header">
+		<div class="heading">
+			<img src="https://i.postimg.cc/tJPxmRFW/Pngtree-namaste-hand-illustration-with-flower-8795958.png" height="150px" width="150px">
+			<a href="index.html"><div class="brand">
+				<h1>Madras Café</h1>
+				<h2>&#10037;&#10037;&#10037;&nbsp;Since 1974&nbsp;&#10037;&#10037;&#10037;</h2>
+			</div></a>
+            <div class="heading-images">
+                <img src="https://i.postimg.cc/rszWBRRR/idlyvada.jpg" width="150px" height="100px">
+                <img src="https://i.postimg.cc/CM6bj79G/poori.jpg" width="150px" height="100px">
+                <img src="https://i.postimg.cc/6Q0vTfdG/parotta.jpg" width="150px" height="100px">
+                <img src="https://i.postimg.cc/MH4RqZ1P/dosa.jpg" width="150px" height="100px">
+                <img src="https://i.postimg.cc/C1hb4QFN/kaapi.jpg" width="150px" height="100px">
+            </div>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="ourhistory.html">Our History</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="delivery.html">Delivery</a></li>
+			<li><a href="catering.html">Catering</a></li>
+			<li><a href="branches.html">Branches</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>		
+			<div class="login">
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>	
+			</div>
+		</ul>
+	</nav>
+
+<body>
+	
+	<header><h2>User Registeration: </h2></header>
+
+	<form>
+		<p></p>
+		<label >Username: &emsp;</label>
+		<input type="text" name="Username" placeholder="Your Username" id="username">
+		<br>
+		<br>
+		<label >First Name: &emsp;</label>
+		<input type="text" name="First Name" placeholder="Your First Name" id="firstname">
+		<br><br>
+		<label >Middle Name: &emsp;</label>
+		<input type="text" name="Middle Name" placeholder="Your Middle Name" id="middlename">
+		<br><br>
+		<label >Last Name: &emsp;</label>
+		<input type="text" name="Last Name" placeholder="Your Last Name" id="lastname">
+		<br><br>
+		<label for="phone number">Phone number (+91 00000-00000): &emsp;</label>
+		<input type="tel" id="phone number" name="phone number" value="+91">
+		<br><br>
+		<label >Email: &emsp;</label>
+		<input type="Email" name="Email" placeholder="Your Email" id="email">
+		<br><br>
+		<label >Date of Birth: &emsp;</label>
+		<input type="Date" name="Date of Birth" placeholder="Your Date of Birth">
+		<br><br>
+<!-- 
+		<label for="Qualification">Qualification: &emsp;</label>
+		<select>
+			<option>--Select--</option>
+			<option>PG</option>
+			<option>UG</option>
+			<option>Diploma</option>
+			<option>12th</option>
+			<option>10th</option>
+		</select>
+		<br><br> -->
+		<label >Gender:&emsp;</label>
+		
+		<input type="radio" id="male" name="Gender" value="Male">
+		<label for="male">Male</label>
+		<input type="radio" id="Female" name="Gender" value="Female">
+		<label for="Female">Female</label>
+		<br><br>
+		<label for="address">Address: &emsp;</label><br><br>
+		<textarea id="address"></textarea>
+		<br><br>
+		<label for="City">City: &emsp;</label>
+		<input list="City" name="City" id="City">
+		<datalist id="City">
+			<option value="Chennai"></option>
+			<option value="Trichy"></option>
+			<option value="Madurai"></option>
+			<option value="Coimbatore"></option>
+			<option value="Salem"></option>
+		</datalist>
+		<br><br>
+		<label >Password: &emsp;</label>
+		<input type="text" name="password" placeholder="Your password" id="password">
+		<br>
+		<br>
+		<label >Confirm password: &emsp;</label>
+		<input type="text" name="confirm password" placeholder="Your confirm password" id="confirm password">
+		<br>
+		<br>
+	
+
+
+<!-- 
+		<label for="certificate">Certificate Upload: &emsp;</label>
+		<input type="file" name="certificate"id="certificate">
+		<br><br> -->
+
+
+
+		<input type="checkbox" name="terms" id="terms">
+		<label>I accepts all Terms & Conditions.</label>
+		<br><br>
+
+		<input type="button" value="Register" onclick="registerForm()">
+		
+		<input type="button" value="Clear">
+	</form>
+<!-- 
+	<table border="solid black 3px">
+		<caption>Registeration Form:</caption>
+		<tr><td>Registration Form Dates</td></tr>
+
+		<tr>
+			<td><label for="Username">User Name</label></td>
+			<td id="tbusername"></td>
+		</tr>
+		<tr>
+			<td><label for="Firstname">First Name</label></td>
+			<td id="tbfirstname"></td>
+		</tr>                                                                            
+		<tr>
+			<td><label for="Lastname">Last Name</label></td>
+			<td id="tblastname"></td>
+		</tr>
+	 	<tr>
+			<td><label for="dob">DOB</label></td>
+			<td id="dob"></td>
+		</tr>
+			<tr>
+			<td><label for="qualification">qualification</label></td> 
+			<td id="qualification"></td>
+		</tr>
+		<tr>
+			<td><label for="gender">Gender</label></td>
+			<td id="gender"></td>
+		</tr>
+		<tr>
+			<td><label for="phone number">Phone Number</label></td>
+			<td id="phone number"></td>
+		</tr>
+
+		<tr>
+			<td><label for="email">Email</label></td>
+			<td id="tbemail"></td>
+		</tr>
+                                                                                                   
+	</table> -->
+
+	<script src="script.js"></script>
+</body>                                  
+	<footer>
+		<ul>
+			<li><a href="#"><img src="https://i.postimg.cc/02Tm4Qkr/yt.png"></a></li>
+			<li><a href="#"><img src="https://i.postimg.cc/63b4f6bW/insta.png"></a></li>
+			<li><a href="#"><img src="https://i.postimg.cc/W42FGFTJ/317750-linkedin-icon.png"></a></li>
+			<li><a href="#"><img src="https://i.postimg.cc/GmRVjrNy/1783351-chatting-messages-social-media-whatsapp-internet-icon.png"></a></li>
+		</ul>
+
+		<p>&#169;&nbsp;2023 | All Copyrights reserved</p>
+	</footer>
